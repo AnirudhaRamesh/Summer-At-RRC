@@ -1,0 +1,3 @@
+5) Translations increase as we will be moving futher away to get image of cube of same size. Rotations will remian the same.
+
+6)  Project it back and compare with how accurate other points come in the the image. Whoever does the best has the best coordinates.
