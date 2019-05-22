@@ -1,0 +1,63 @@
+P = [0,0,0] 
+l = 5
+w = 5 
+h = 10
+
+points_matrix = [ 0, 0, 0 ; 5,0,-10 ; 5,5,-10 ; 5,-5,-10 ; -5,-5,-10 ]
+points_matrix = points_matrix' ; 
+
+figure
+x = [P(1),P(1)+l,P(1)+l,P(1)]; 
+y = [P(2),P(2),P(2)-w,P(2)-w]; 
+z = [P(3),P(3),P(3),P(3)]-h; 
+fill3(x, y, z ,'blue'), hold on  
+x2 = [P(1),P(1)+l,P(1)+ l/2]; 
+y2 = [P(2),P(2),P(2)-w/2]; 
+z2 = [P(3),P(3),P(3)+h]-h; 
+fill3(x2, y2, z2,'green'), hold on
+x3 = [P(1)+l,P(1)+l,P(1) + l/2]; 
+y3 = [P(2), P(2)-w,P(2)- w/2]; 
+z3 = [P(3),P(3),P(3)+h]-h; 
+fill3(x3, y3, z3,'red'), hold on 
+x4 = [P(1)+l,P(1),P(1)+ l/2]; 
+y4 = [P(2)-w,P(2)-w,P(2)- w/2]; 
+z4 = [P(3),P(3),P(3)+h]-h;  
+fill3(x4,y4,z4,'green'), hold on 
+x5 = [P(1),P(1),P(1) + l/2]; 
+y5 = [P(2),P(2)-w,P(2)- w/2]; 
+z5 = [P(3),P(3),P(3)+h]-h;  
+fill3(x5,y5,z5,'red')
+
+hold off 
+
+theta = 45 ; 
+Rot_matrix = [ 1 0 0  ; 0 cos(45) -sin(45) ; 0 sin(45) cos(45) ] 
+
+points_matrix = Rot_matrix * points_matrix ; 
+
+l = points_matrix(1,3) ;
+w = po
+
+figure
+x = [P(1),P(1)+l,P(1)+l,P(1)]; 
+y = [P(2),P(2),P(2)-w,P(2)-w]; 
+z = [P(3),P(3),P(3),P(3)]-h; 
+fill3(x, y, z ,'blue'), hold on  
+x2 = [P(1),P(1)+l,P(1)+ l/2]; 
+y2 = [P(2),P(2),P(2)-w/2]; 
+z2 = [P(3),P(3),P(3)+h]-h; 
+fill3(x2, y2, z2,'green'), hold on
+x3 = [P(1)+l,P(1)+l,P(1) + l/2]; 
+y3 = [P(2), P(2)-w,P(2)- w/2]; 
+z3 = [P(3),P(3),P(3)+h]-h; 
+fill3(x3, y3, z3,'red'), hold on 
+x4 = [P(1)+l,P(1),P(1)+ l/2]; 
+y4 = [P(2)-w,P(2)-w,P(2)- w/2]; 
+z4 = [P(3),P(3),P(3)+h]-h;  
+fill3(x4,y4,z4,'green'), hold on 
+x5 = [P(1),P(1),P(1) + l/2]; 
+y5 = [P(2),P(2)-w,P(2)- w/2]; 
+z5 = [P(3),P(3),P(3)+h]-h;  
+fill3(x5,y5,z5,'red')
+
+hold off 
